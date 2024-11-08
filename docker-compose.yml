@@ -2,8 +2,8 @@ services:
   portainer-test:
     build:
       dockerfile: Dockerfile
-#    volumes:
-#      - $PWD/src:/usr/src/app/src
+    volumes:
+      - ${$PWD}/src:/usr/src/app/src
     container_name: portainer-test
     environment:
       - TEST=env_value_test
